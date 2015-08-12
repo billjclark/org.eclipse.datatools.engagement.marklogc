@@ -6,8 +6,12 @@ Bundle-Version: 1.0.0
 Bundle-ClassPath: .,
  src
 Bundle-Localization: plugin
-Export-Package: org.eclipse.datatools.engagement.marklogic.impl;version="1.0.0"
+Export-Package: org.eclipse.datatools.engagement.marklogic,
+ org.eclipse.datatools.engagement.marklogic.i18n,
+ org.eclipse.datatools.engagement.marklogic.impl;version="1.0.0",
+ org.eclipse.datatools.engagement.marklogic.util,
+ org.eclipse.datatools.engagement.marklogic.util.date,
+ org.eclipse.datatools.engagement.marklogic.util.ui
 Require-Bundle: org.eclipse.core.runtime,
- org.eclipse.datatools.connectivity.oda;bundle-version="[3.4.0,4.0.0)",
- org.eclipse.datatools.connectivity.oda.profile;bundle-version="[3.2.0,4.0.0)"
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+ org.eclipse.datatools.connectivity.oda,
+ org.eclipse.datatools.connectivity.oda.profile

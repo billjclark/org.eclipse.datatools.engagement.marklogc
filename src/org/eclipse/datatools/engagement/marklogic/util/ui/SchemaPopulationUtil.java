@@ -21,13 +21,6 @@ import java.util.Map;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import org.apache.xerces.dom.DOMInputImpl;
-import org.apache.xerces.impl.xs.XMLSchemaLoader;
-import org.apache.xerces.impl.xs.XSElementDecl;
-import org.apache.xerces.xs.XSConstants;
-import org.apache.xerces.xs.XSLoader;
-import org.apache.xerces.xs.XSModel;
-import org.apache.xerces.xs.XSNamedMap;
 import org.eclipse.datatools.connectivity.oda.OdaException;
 import org.eclipse.datatools.engagement.marklogic.i18n.Messages;
 import org.eclipse.datatools.engagement.marklogic.util.ISaxParserConsumer;
@@ -38,6 +31,22 @@ import org.eclipse.datatools.engagement.marklogic.util.XMLPath;
 import org.eclipse.datatools.engagement.marklogic.util.XMLSourceFromPath;
 import org.w3c.dom.ls.LSInput;
 
+import org.apache.xerces.dom.DOMInputImpl;
+import org.apache.xerces.impl.xs.XMLSchemaLoader;
+import org.apache.xerces.impl.xs.XSElementDecl;
+import org.apache.xerces.xs.XSConstants;
+import org.apache.xerces.xs.XSLoader;
+import org.apache.xerces.xs.XSModel;
+import org.apache.xerces.xs.XSNamedMap;
+/*
+import com.sun.org.apache.xerces.internal.dom.DOMInputImpl;
+import com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader;
+import com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl;
+import com.sun.org.apache.xerces.internal.xs.XSConstants;
+import com.sun.org.apache.xerces.internal.xs.XSLoader;
+import com.sun.org.apache.xerces.internal.xs.XSModel;
+import com.sun.org.apache.xerces.internal.xs.XSNamedMap;
+*/
 
 /**
  * This class is used to offer GUI a utility to get an tree from certain xml/xsd

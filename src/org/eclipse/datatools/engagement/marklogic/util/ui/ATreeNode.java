@@ -15,6 +15,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import org.eclipse.datatools.connectivity.oda.OdaException;
+import org.eclipse.datatools.engagement.marklogic.impl.DataTypes;
+
+
 import org.apache.xerces.impl.xs.XSAttributeGroupDecl;
 import org.apache.xerces.impl.xs.XSAttributeUseImpl;
 import org.apache.xerces.impl.xs.XSComplexTypeDecl;
@@ -26,6 +30,16 @@ import org.apache.xerces.xs.XSObjectList;
 import org.eclipse.datatools.connectivity.oda.OdaException;
 import org.eclipse.datatools.engagement.marklogic.impl.DataTypes;
 
+/*
+import com.sun.org.apache.xerces.internal.impl.xs.XSAttributeGroupDecl;
+import com.sun.org.apache.xerces.internal.impl.xs.XSAttributeUseImpl;
+import com.sun.org.apache.xerces.internal.impl.xs.XSComplexTypeDecl;
+import com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl;
+import com.sun.org.apache.xerces.internal.impl.xs.XSModelGroupImpl;
+import com.sun.org.apache.xerces.internal.impl.xs.XSParticleDecl;
+import com.sun.org.apache.xerces.internal.xs.XSAttributeDeclaration;
+import com.sun.org.apache.xerces.internal.xs.XSObjectList;
+*/
 /**
  * The instance of this class is used as tree node of the xml schema tree that
  * is passed to gui.
