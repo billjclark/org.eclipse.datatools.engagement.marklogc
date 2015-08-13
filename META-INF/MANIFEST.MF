@@ -14,4 +14,5 @@ Export-Package: org.eclipse.datatools.engagement.marklogic,
  org.eclipse.datatools.engagement.marklogic.util.ui
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.datatools.connectivity.oda,
- org.eclipse.datatools.connectivity.oda.profile
+ org.eclipse.datatools.connectivity.oda.profile,
+ org.apache.xerces;bundle-version="2.9.0"
