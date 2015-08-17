@@ -20,6 +20,8 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -46,7 +48,12 @@ public class ResourceLocatorUtil
 		
 		try
 		{
-			return new BufferedInputStream( uri.toURL( ).openStream( ));
+			URL url = uri.toURL( );
+			URLConnection urlCon = url.openConnection();
+			urlCon.setRequestProperty("content-type", "application/xml");
+			urlCon.setRequestProperty("Accept", "application/xml");
+			return new BufferedInputStream( urlCon.getInputStream());
+//			return new BufferedInputStream( uri.toURL().openStream( ));
 		}
 		catch ( MalformedURLException e )
 		{
